@@ -1,0 +1,10 @@
+rules:
+  - id: jwt-none-algorithm
+    languages:
+      - javascript
+    message: Detected usage of 'none' algorithm with JWTs, which allows tokens to be
+      verified without a signature. This can be a significant security risk.
+    severity: ERROR
+    patterns:
+      - pattern: |
+          jwt.sign(..., ..., { algorithm: "none" }, ...);

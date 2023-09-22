@@ -1,0 +1,7 @@
+rules:
+  - id:  python-hardcoded-secrets-jwt
+    message: "Detected python hardcoded secrets jwt"
+    severity: WARNING
+    languages:
+      - python
+    pattern: jwt.encode($PAYLOAD, key=$SEC, algorithm='none')

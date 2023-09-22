@@ -1,0 +1,7 @@
+rules:
+    - id:  docker-sudo
+      message: "Detected sudo usage"
+      severity: WARNING
+      languages:
+        - generic
+      pattern: RUN sudo

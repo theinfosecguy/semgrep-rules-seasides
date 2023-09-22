@@ -1,0 +1,10 @@
+rules:
+- id: untitled_rule
+  patterns:
+    - pattern: create_query("..."+$X+"...")
+    - pattern-inside: |
+        def $FUNC($X):
+          ... 
+  message: Semgrep found a match
+  languages: [python]
+  severity: WARNING

@@ -1,0 +1,7 @@
+rules:
+    - id:  python-app-no-certs
+      message: "python-app-no-certs"
+      severity: WARNING
+      languages:
+        - python
+      pattern: ur3.$TYPE('$URL', cert_reqs='NONE')

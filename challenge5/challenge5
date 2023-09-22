@@ -1,0 +1,10 @@
+import hashlib
+
+def weak_hash_md5(data):
+    return hashlib.md5(data.encode()).hexdigest()
+
+def weak_hash_sha1(data):
+    return hashlib.sha1(data.encode()).hexdigest()
+
+def strong_hash_sha256(data):
+    return hashlib.sha256(data.encode()).hexdigest()

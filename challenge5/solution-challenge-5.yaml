@@ -1,0 +1,14 @@
+rules:
+    - id:  weak-algorith
+      message: "python-weak-algo-usage"
+      severity: WARNING
+      languages:
+        - python
+      patterns:
+        - pattern-either:
+          - pattern: hashlib.md5
+          - pattern: hashlib.sha1
+        - pattern-inside: |
+            def $FUNTION(...):
+              ...
+

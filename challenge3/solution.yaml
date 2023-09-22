@@ -1,0 +1,8 @@
+rules:
+    - id: wildcard-imports
+      languages:
+        - python
+      message: Detected wildcard-imports
+      severity: WARNING
+      patterns:
+        - pattern: "from $MOD import *"

@@ -1,0 +1,9 @@
+rules:
+    - id:  usage-of-sudo-bash
+      message: "detected usage-of-sudo-bash"
+      severity: WARNING
+      languages:
+        - bash
+      patterns:
+        - pattern: sudo /bin/bash
+        - pattern: sudo

@@ -1,0 +1,6 @@
+rules:
+- id: untitled_rule
+  pattern: ur3.$X('someurl', cert_reqs='NONE')
+  message: Semgrep found a match
+  languages: [python]
+  severity: WARNING

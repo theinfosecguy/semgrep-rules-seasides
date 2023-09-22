@@ -1,0 +1,9 @@
+rules:
+- id: untitled_rule
+  pattern-either:
+    - pattern: hashlib.md5(...)
+    - pattern: hashlib.sha1(...)
+    
+  message: Semgrep found a match
+  languages: [python]
+  severity: WARNING
